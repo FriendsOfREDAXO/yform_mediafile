@@ -1,7 +1,7 @@
-yform_values_mediafile_description =	Ein <b>Upload-Feld</b>, mit dem eine Datei in den Medienpool hochgeladen wird.
-yform_values_mediafile_max_size = Maximale Größe in Kb oder Range 100,500
-yform_values_mediafile_types = Welche Dateien sollen erlaubt sein, kommaseparierte Liste. ".gif,.png"
-yform_values_mediafile_required = Pflichtfeld
-yform_values_mediafile_messages = min_err,max_err,type_err,empty_err
-yform_values_mediafile_category = Mediakategorie ID
-yform_values_mediafile_user = Mediapool User (createuser/updateuser)
+yform_mediafile_description =	Ein <b>Upload-Feld</b>, mit dem eine Datei in den Medienpool hochgeladen wird.
+yform_mediafile_max_size = Maximale Größe in Kb oder Range 100,500
+yform_mediafile_types = Welche Dateien sollen erlaubt sein, kommaseparierte Liste. ".gif,.png"
+yform_mediafile_required = Pflichtfeld
+yform_mediafile_messages = min_err,max_err,type_err,empty_err
+yform_mediafile_category = ID der Mediakategorie
+yform_mediafile_user = Mediapool User (createuser/updateuser)
