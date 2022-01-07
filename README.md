@@ -1,5 +1,5 @@
 # yform_mediafile
 
-Recovery of the value mediafile for yform >= 4
+Stellt das alte mediafile upload value wieder bereit für yform >= 4.
 
-An **upload field** used to upload a file to the media pool
+Dies ist eine Zwischenlösung, bis ein geeigneter Ersatz für YForm entwickelt wurde.
