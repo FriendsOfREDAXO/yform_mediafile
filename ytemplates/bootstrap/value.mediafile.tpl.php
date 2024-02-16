@@ -23,14 +23,21 @@ $class_group = trim('form-group ' . $this->getHTMLClass() . ' ' . $this->getWarn
 ?>
 
 <div class="<?= $class_group ?>">
-    <label for="<?= $this->getFieldId() ?>"><?= $this->getLabel() ?></label>
-    <input type="file" id="<?= $this->getFieldId() ?>" name="file_<?= md5($this->getFieldName('file')) ?>" accept="<?= $this->getElement('types') ?>" />
+    <label class="control-label" for="<?= $this->getFieldId() ?>"><?= $this->getLabel() ?></label>
+    <div class="input-group">
+        <input class="form-control" type="file" id="<?= $this->getFieldId() ?>" name="file_<?= md5($this->getFieldName('file')) ?>" accept="<?= $this->getElement('types') ?>" />
+        <span class="input-group-btn"><button class="btn btn-default" type="button" onclick="const file = document.getElementById('<?= $this->getFieldId() ?>'); file.value = '';">×</button></span>
+    </div>
     <?php if ($this->getValue()): ?>
         <div class="help-block">
             <dl class="<?= $this->getHTMLClass() ?>-info">
                 <dt>Dateiname</dt>
                 <dd><?php
-                    echo '<a href="'.rex_url::media($this->getValue()).'">'.htmlspecialchars($this->getValue()).'</a>';
+                    echo '<a target="_blank" href="'.rex_url::media($this->getValue()).'">'.htmlspecialchars($this->getValue()).'</a>';
+                ?></dd>
+                <dt>Vorschau</dt>
+                <dd><?php
+                    echo '<a target="_blank" href="'.rex_url::media($this->getValue()).'"><img src="'.rex_media_manager::getUrl('rex_media_small',$this->getValue()).'" /></a>';
                 ?></dd>
             </dl>
             <div class="checkbox">
