@@ -5,3 +5,5 @@ yform_mediafile_required = Pflichtfeld
 yform_mediafile_messages = min_err,max_err,type_err,empty_err
 yform_mediafile_category = ID der Mediakategorie
 yform_mediafile_user = Mediapool User (createuser/updateuser)
+yform_mediafile_filename = Dateiname
+yform_mediafile_delete = Datei löschen
