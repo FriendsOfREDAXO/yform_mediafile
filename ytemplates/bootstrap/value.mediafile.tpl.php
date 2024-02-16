@@ -31,11 +31,11 @@ $class_group = trim('form-group ' . $this->getHTMLClass() . ' ' . $this->getWarn
     <?php if ($this->getValue()): ?>
         <div class="help-block">
             <dl class="<?= $this->getHTMLClass() ?>-info">
-                <dt>Dateiname</dt>
+                <dt><?=rex_i18n::msg('yform_mediafile_filename')?></dt>
                 <dd><?php
                     echo '<a target="_blank" href="'.rex_url::media($this->getValue()).'">'.htmlspecialchars($this->getValue()).'</a>';
                 ?></dd>
-                <dt>Vorschau</dt>
+                <dt><?=rex_i18n::msg('yform_mediafile_preview')?></dt>
                 <dd><?php
                     echo '<a target="_blank" href="'.rex_url::media($this->getValue()).'"><img src="'.rex_media_manager::getUrl('rex_media_small',$this->getValue()).'" /></a>';
                 ?></dd>
@@ -43,7 +43,7 @@ $class_group = trim('form-group ' . $this->getHTMLClass() . ' ' . $this->getWarn
             <div class="checkbox">
                 <label>
                     <input type="checkbox" name="<?php echo md5($this->getFieldName('delete')) ?>" value="1" />
-                    Datei löschen
+                    <?=rex_i18n::msg('yform_mediafile_delete')?>
                 </label>
             </div>
         </div>
