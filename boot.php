@@ -1,3 +1,4 @@
+<?php 
 // Boot.php
 rex_extension::register('PACKAGES_INCLUDED', function (rex_extension_point $ep) {
     // Statt $this das Addon-Objekt verwenden
